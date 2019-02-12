@@ -1,0 +1,27 @@
+body {
+  color: red;               /* red*/
+  background-color: white;    /* white */
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+p {
+  text-align: left;
+}
+h1, h2 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal;                              /* Add this to make the boldness */
+}
