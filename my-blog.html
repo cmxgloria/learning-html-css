@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+<title>Gloria Blog</title>
+<link href="/normalize.css" rel="stylesheet">
+<style>
+header{
+  text-align:center;
+  font-size:40px;
+  background:url("https://images.pexels.com/photos/1546251/pexels-photo-1546251.jpeg");
+  background-size:cover;
+  color:purple;
+  padding:20;
+  }
+  .myPic {
+    margin: 40px 0px 0px 0px;
+    border: 20px solid white;
+    border-radius: 40px;
+    text-align: center;
+  }
+  .myPicWrapper {
+    text-align: center;
+    }
+    li{
+      display: inline;
+      padding: 10px 5px 10px 5px;
+      }
+  article{
+    max-width: 500px;
+    padding: 30;
+    margin: 0 auto;
+    }
+    @media(max-width: 500px){
+      h2{
+        font-size: 30px;}
+      li{
+        padding:5px;
+        display:block;}
+        }
+  a{
+    color:navy;
+    }
+  h2{
+    font-size:40px;
+    text-align:center;
+    }
+  p{
+    font-size:20px;
+    color:#000000;
+    }
+  .thai {
+    width: 600px;
+  }  
+</style>
+</head>
+
+<div class="myPicWrapper"><img class="myPic" src="https://i.imgur.com/TNvkhZWm.jpg" /></div>
+<header>Gloria Blog</header>
+<ul>
+<li><a href="#" /a>About Me</li>
+<li><a href="#"/a>Good Post</li>
+<li><a href="#"/a>Bad Post</li>
+</ul>
+<body>
+<article>
+<h2>Holiday Experience</h2>
+<p>I went to thailand last year and would like to share some experience with you all.</p>
+<img class="thai" src="https://media-cdn.urbanadventures.com/blog/wp-content/uploads/chiang-mai-temple-featured.jpg" />
+<button>like</button>
+</article>
+<article>
+<h2>Meaningful Matter</h2>
+<p>I saw a lost cat in the park today and tried to help it to find its owner.</p>
+<button>like</button>
+</article>
+<article>
+<h2>Study time</h2>
+<p>I tried to learn something cool about tech and spent lots of time to study.</p>
+<button>like</button>
+</article>
+<br>
+<p><strong><em>Email</em></strong>: abjjj@gmail.com 
+<br>
+<strong><em>Contact</em></strong>: 03-93456875</p>
+<script>
+  $("button").on("click",function(){alter("A button was clicked!")});
+</script>
+</body>
