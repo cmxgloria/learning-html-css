@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my website</title>
+    <script src="/assets/jquery.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-family: 'Chelsea Market', cursive;
+            margin: 0 auto;
+            max-width: 600px;
+            background: lightgreen;
+        }
+
+        div {
+            height: 200px;
+            background-size: cover;
+            position: relative;
+            margin: 40px 0 0 0;
+            border-radius: 20px;
+        }
+
+        h1 {
+            font-family: 'Chelsea Market', cursive;
+            text-align: center;
+            font-size: 75px;
+            color: #aaaaaa;
+            margin: 60px 0 0 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+            margin: 0px 0 40px 0;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 1);
+            background: green;
+            background: linear-gradient(to top, rgba(176, 63, 191, 1), rgba(0, 0, 0, .6));
+            background: -webkit-linear-gradient(to top, rgba(176, 63, 191, 1), rgba(0, 0, 0, .6));
+            background: -moz-linear-gradient(to top, rgba(176, 63, 191, 1), rgba(0, 0, 0, .6));
+            padding: 10px;
+            line-height: 30px;
+            text-align: justify;
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            height: 50px;
+            transition: height .6s;
+            -webkit-transition: height .6s;
+            -moz-transition: height .6s;
+
+        }
+
+        small {
+            opacity: 0;
+        }
+
+        .show-description p {
+            height: 100px;
+        }
+
+        .show-description small {
+            opacity: 1;
+        }
+
+        .light {
+            background-image: url(https://i.imgur.com/iC9ySK2.jpg);
+        }
+
+        .decoration {
+            background-image: url(https://i.imgur.com/mlxowYi.jpg);
+        }
+
+        .handbag {
+            background-image: url(https://i.imgur.com/LerFVo3.jpgg);
+        }
+
+        .price {
+            float: right;
+        }
+
+        .address {
+            background: white;
+            border-radius: 30px;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 50px;
+                margin-top: 20px;
+                line-height: 40px;
+            }
+        }
+
+        @media(max-width:500px) {
+            h2 {
+                font-size: 20px;
+                margin: 20px 0 30px 0;
+            }
+        }
+
+        @media(max-width:500px) {
+            .address {
+                font-size: 10px;
+                margin: 30px 0 30px 0;
+            }
+        }
+
+        @media(max-width: 500px) {
+            div {
+                margin: 20px 12px 0 12px;
+            }
+        }
+
+        @media(max-width:500px) {
+            p {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+
+        @media(max-width:500px) {
+            small {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FANCY SHOP FOR KIDS</h1>
+    <h2>MELBOURNE FANCY SHOP FOR KIDS</h2>
+
+    <h2 class="address">ADDRESS: 211 LITTLE BOURKE STREET MELBOURNE PHONE:0394576438 EMAIL:infofancykid@gmail.com
+    </h2>
+
+    <div class="light">
+        <p>SOLAR LIGHT<span class="price">$20</span><br/>
+            <small>Changeable colour.With solar panel,it can leave it under the sun to charge for free and reuse for 5 years.</small>
+        </p>
+    </div>
+    <div class="decoration">
+        <p>PARIS HOME DECORATION<span class="price">$15</span><br/>
+            <small>Different kinds of home decoration, such as paris,motorbike,plane and tank.</small>
+        </p>
+    </div>
+    <div class="handbag">
+        <p>CUTE GIRLS' BAG<span class="price">$18</span><br/>
+            <small>Lovely and popular girls' handbag.There are four different colors and similar different styles.</small>
+        </p>
+    </div>
+    <script>
+        $('div').on('click', function () {
+            $(this).toggleClass('show-description');
+        });
+    </script>
+</body>
+
+</html>
