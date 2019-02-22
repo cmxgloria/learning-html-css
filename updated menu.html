@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
 <script src="/assets/jquery.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
@@ -46,15 +45,19 @@ p {
   -webkit-transition: height .5s;
   -moz-transition: height .5s;
 }
-small{
-  opacity:0;
-  }
-   .show-description p{
-      height:150px;
-      }
-    .show-description small{
-      opacity: 1;
-    }
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
 .first{
   background-image: url("http://dash.ga.co/assets/firstcourse.jpg");
 }
@@ -67,38 +70,28 @@ small{
 .price {
   float: right;
 }
-
-
-  @media (max-width: 500px) {
-    h1 {
+@media (max-width: 500px) {
+  h1 {
     font-size: 50px;
     margin-top: 20px;
     line-height: 40px;
-    }
   }
-  @media(max-width:500px){
-    h2{
-      font-size: 20px;
-  margin: 20px 0 30px 0;
-      }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
   }
-  @media(max-width: 500px){
-    div{
+  div {
     margin: 20px 12px 0 12px;
-    }
   }
-@media(max-width:500px){
-  p{
+  p {
     font-size: 20px;
     line-height: 24px;
-    }
   }
-@media(max-width:500px){
-  small{
-    font-size:16px;
-    }
-    }
-   
+  small {
+    font-size: 16px;
+  }
+}
+
 </style>
 
 </head>
@@ -121,9 +114,8 @@ small{
   <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
 </div>
 <script>
- $('div').on('click', function() {
-   $(this).toggleClass('show-description');
-   });
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
 </script>
 </body>
-</html>
