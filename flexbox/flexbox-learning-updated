@@ -57,3 +57,79 @@ how to fix it if the box stay outside
   justify-content: center;    /* Change this */
   flex-wrap: wrap;
 }
+
+
+flex container direction
+.photo-grid {
+  /* ... */
+  flex-direction: column;
+}
+
+
+--flex container order
+ row-reverse and column-reverse properties. 
+ .photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;  /* <--- Really freaking cool! */
+  align-items: center;
+}
+(basically ok, but still not in order)
+
+flex item order
+.photo-grid {
+  /* ... */
+  flex-direction: row;  /* Update this */
+  align-items: center;
+}
+
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+
+flex item alignment
+We can do the same thing with vertical alignment. What if we want that Subscribe link and those social icons to go at the bottom of the header instead of the center? Align them individually! This is where the align-self property comes in. Adding this to a flex item overrides the align-items value from its container:
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+flexible items
+<div class='footer'>
+  <div class='footer-item footer-one'></div>
+  <div class='footer-item footer-two'></div>
+  <div class='footer-item footer-three'></div>
+</div>
+Then, some CSS:
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
