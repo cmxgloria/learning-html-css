@@ -1,3 +1,9 @@
 https://internetingishard.com/html-and-css/flexbox/
 
 flexbox gives us complete control over the alignment, direction, order, and size of our boxes
+Flexbox uses two types of boxes that we’ve never seen before: “flex containers” and “flex items”. The job of a flex container is to group a bunch of flex items together and define how they’re positioned.
+
+
+Every HTML element that’s a direct child of a flex container is an “item"
+grouping flex items
+cross-axis (vertical) alignment
