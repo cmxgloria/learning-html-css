@@ -121,6 +121,36 @@ Then, some CSS:
   height: 200px;
   flex: 1;
 }
+Increasing the weight of one of the items makes it grow faster than the others. For example, we can make the third item grow twice as fast as the other two with the following rule:
+
+.footer-three {
+  flex: 2;
+}
+
+
+static item widths
+We can even mix-and-match flexible boxes with fixed-width ones. flex: initial falls back to the item’s explicit width property. This lets us combine static and flexible boxes in complex ways.
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
+Without that flex: initial; line, the flex: 1; declaration would be inherited from the .footer-item rule, causing the width properties to be ignored. initial fixes this, and we get a flexible layout that also contains fixed-width items. When you resize the browser window, you’ll see that only 
+the middle box in the footer gets resized.
+
+
+flex items and auto-margins
+<div class='menu-container'>
+  <div class='menu'>
+    <div class='date'>Aug 14, 2016</div>
+    <div class='signup'>Sign Up</div>
+    <div class='login'>Login</div>
+  </div>
+</div>
+.signup {
+  margin-left: auto;
+}
 
 
 
