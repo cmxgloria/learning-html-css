@@ -5,5 +5,55 @@ Flexbox uses two types of boxes that we’ve never seen before: “flex containe
 
 
 Every HTML element that’s a direct child of a flex container is an “item"
+
 grouping flex items
+
 cross-axis (vertical) alignment
+The official specification calls this “cross-axis” alignment (we’ll see why in a moment), but for our purposes it might as well be called “vertical” alignment.
+The available options for align-items is similar to justify-content:
+center
+flex-start   (top)
+flex-end      (bottom)
+stretch
+baseline
+sample:
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+wrapping flex items
+Again, the corresponding CSS should be familiar from previous sections:
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+ width: 300px;
+  height: 300px;
+}
+how to fix it if the box stay outside
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;    /* Change this */
+  flex-wrap: wrap;
+}
