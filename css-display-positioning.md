@@ -230,3 +230,5 @@ footer{
 }
 
 ```
+
+// position: static, fixed(it won't move regardless user scroll down), absolute and relative
