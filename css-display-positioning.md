@@ -232,3 +232,8 @@ footer{
 ```
 
 // position: static, fixed(it won't move regardless user scroll down), absolute and relative
+
+```
+The z-index property controls how far “back” or how far “forward” an element should appear on the web page when elements overlap. This can be thought of the depth of elements, with deeper elements appearing behind shallower elements.
+```
+
