@@ -1,5 +1,11 @@
 https://internetingishard.com/html-and-css/flexbox/
 
+https://yoksel.github.io/flex-cheatsheet/
+
+https://learnlayout.com/
+
+
+
 flexbox gives us complete control over the alignment, direction, order, and size of our boxes
 Flexbox uses two types of boxes that we’ve never seen before: “flex containers” and “flex items”. The job of a flex container is to group a bunch of flex items together and define how they’re positioned.
 
